@@ -1,5 +1,3 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
-
 #ifndef __CVX16_DRAM_CAP_CHECK_H__
 #define __CVX16_DRAM_CAP_CHECK_H__
 

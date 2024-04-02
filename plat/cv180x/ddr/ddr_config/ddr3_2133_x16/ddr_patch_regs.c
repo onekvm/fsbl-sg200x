@@ -1,8 +1,7 @@
-// SPDX-License-Identifier: BSD-3-Clause
-
 #include <stddef.h>
 #include <utils_def.h>
 #include <mmio.h>
+#include <reg_soc.h>
 #include <ddr_sys.h>
 #include "regconfig.h"
 

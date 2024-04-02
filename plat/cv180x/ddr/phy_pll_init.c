@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: BSD-3-Clause
-
 #include <platform.h>
 #include <ddr_sys.h>
 #ifdef DDR2_3
@@ -33,6 +31,10 @@ void pll_init(void)
 	reg_step = reg_set * dev_freq / (reg_span * 1000);
 	uartlog("ddr_data_rate = %d, freq_in = %d reg_set = %lx tar_freq = %x reg_span = %lx reg_step = %lx\n",
 		ddr_data_rate, freq_in, reg_set, tar_freq, reg_span, reg_step);
+	// uartlog("reg_set = %lx\n", reg_set);
+	// uartlog("tar_freq = %x\n", tar_freq);
+	// uartlog("reg_span = %lx\n", reg_span);
+	// uartlog("reg_step = %lx\n", reg_step);
 
 	cvx16_pll_init();
 }

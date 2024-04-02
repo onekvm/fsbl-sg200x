@@ -1,10 +1,9 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
-
 #ifndef __BITWISE_OPS_H__
 #define __BITWISE_OPS_H__
 
 #include <stdint.h>
 
+// #define BIT(nr)				(1U << (nr))
 #define GENMASK(msb, lsb)	((2U << (msb))-(1U << (lsb)))
 
 static inline uint32_t modified_bits_by_value(uint32_t orig, uint32_t value, uint32_t msb, uint32_t lsb)
@@ -17,6 +16,8 @@ static inline uint32_t modified_bits_by_value(uint32_t orig, uint32_t value, uin
 
 static inline uint32_t get_bits_from_value(uint32_t value, uint32_t msb, uint32_t lsb)
 {
+	// if (msb < lsb)
+	//     uartlog("%s: msb %u < lsb %u\n", __func__, msb, lsb);
 	return ((value & GENMASK(msb, lsb)) >> lsb);
 }
 

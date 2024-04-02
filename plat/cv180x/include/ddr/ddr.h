@@ -1,5 +1,3 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
-
 #ifndef __DDR_H__
 #define __DDR_H__
 

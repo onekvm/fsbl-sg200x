@@ -1,11 +1,12 @@
-// SPDX-License-Identifier: BSD-3-Clause
-
 #include <mmio.h>
+#include <reg_soc.h>
 #include <ddr_sys.h>
 
 void cvx16_dram_cap_check(uint8_t size)
 {
 	uartlog("%s\n", __func__);
+	// ddr_debug_wr32(0x5A);
+	// ddr_debug_num_write();
 	KC_MSG("-5A- %s\n", __func__);
 
 #ifdef ETRON_DDR2_512

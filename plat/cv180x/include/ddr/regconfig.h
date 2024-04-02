@@ -1,7 +1,10 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
-
 #ifndef __REG_CFG_H__
 #define __REG_CFG_H__
+
+// #include <stdint.h>
+// #include "ddr_sys.h"
+
+// #define ARRAY_SIZE(arr)		(sizeof(arr) / sizeof((arr)[0]))
 
 struct regconf {
 	uint32_t addr;
@@ -14,6 +17,10 @@ struct regpatch {
 	uint32_t val;
 };
 
+// #define DDR_CFG_TYPE_DDR3	1
+// #define DDR_CFG_TYPE_DDR2	2
+// #define DDR_CFG_TYPE_DDR3_AUTO	3
+// #define DDR_CFG_TYPE_DDR2_AUTO	4
 #ifdef DDR2_3
 extern struct regpatch ddr3_1866_patch_regs[];
 extern uint32_t ddr3_1866_patch_regs_count;

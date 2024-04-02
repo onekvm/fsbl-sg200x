@@ -1,5 +1,3 @@
-/* SPDX-License-Identifier: BSD-3-Clause */
-
 #ifndef __DDR_SYS_BRING_UP_H__
 #define __DDR_SYS_BRING_UP_H__
 
