@@ -1,5 +1,7 @@
 # fsbl-sg200x
 
+English | [简体中文](README.zh-CN.md)
+
 First-stage boot loader (FSBL, acting as TF-A BL2) and FIP packaging for
 the SG2002 on NanoKVM. The BootROM loads `fip.bin`, which carries this FSBL,
 DDR initialisation, OpenSBI, U-Boot and the C906L firmware.
